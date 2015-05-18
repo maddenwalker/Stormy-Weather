@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let apiKey = valueForKey("FORECAST_API_KEY")
+    let apiKey: String = valueForAPIKey(keyname: "FORECAST_API_KEY")
     
     var coreLocationController:CoreLocationController?
     
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         let automaticCoordinates = getCoordinatesForURLCall()
         
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
+
         let forecastURL = NSURL(string: automaticCoordinates, relativeToURL: baseURL)
         
         let sharedSession = NSURLSession.sharedSession()

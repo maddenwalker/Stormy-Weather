@@ -33,6 +33,7 @@
 /* Begin PBXFileReference section */
 		8C10B3ED1B098A9D00F0AFBF /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		8C10B3EF1B098AEF00F0AFBF /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		8C10B3F11B0993AA00F0AFBF /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		8C276C331AFF9C190003B860 /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
 		8CC014021B0781EA00ACF593 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8CFC7DCE1AFC694D007A92F3 /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +108,7 @@
 			children = (
 				8CC014021B0781EA00ACF593 /* CoreLocation.framework */,
 				8CFC7DD21AFC694D007A92F3 /* Info.plist */,
+				8C10B3F11B0993AA00F0AFBF /* Location.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
