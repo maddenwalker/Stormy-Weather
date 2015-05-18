@@ -66,14 +66,8 @@ class CoreLocationController: NSObject, CLLocationManagerDelegate {
     
     func
     
-//    func returnLocation() -> String {
-//        return locationString!
-//    }
-//    
-//    func reverseGeoCoding () -> String {
-//        
-//    }
-    
-    
+    func returnLocation() -> String {
+        return locationString!
+    }
 
 }

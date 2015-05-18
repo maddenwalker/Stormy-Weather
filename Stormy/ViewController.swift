@@ -28,8 +28,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.coreLocationController = CoreLocationController()
         refreshActivityIndicator.hidden = true
-        
-//        getCurrentWeatherData()
     }
     
     
@@ -40,7 +38,6 @@ class ViewController: UIViewController {
         refreshButton.hidden = true
         refreshActivityIndicator.hidden = false
         refreshActivityIndicator.startAnimating()
-        
         
     }
     
