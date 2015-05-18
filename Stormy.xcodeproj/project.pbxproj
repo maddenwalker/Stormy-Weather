@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C10B3EE1B098A9D00F0AFBF /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C10B3ED1B098A9D00F0AFBF /* ApiKeys.plist */; };
+		8C10B3F01B098AEF00F0AFBF /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10B3EF1B098AEF00F0AFBF /* ApiKeys.swift */; };
 		8C276C341AFF9C190003B860 /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C276C331AFF9C190003B860 /* CoreLocationController.swift */; };
 		8CC014031B0781EA00ACF593 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC014021B0781EA00ACF593 /* CoreLocation.framework */; };
 		8CFC7DD41AFC694D007A92F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFC7DD31AFC694D007A92F3 /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C10B3ED1B098A9D00F0AFBF /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		8C10B3EF1B098AEF00F0AFBF /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		8C276C331AFF9C190003B860 /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
 		8CC014021B0781EA00ACF593 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8CFC7DCE1AFC694D007A92F3 /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,8 @@
 			children = (
 				8CFC7DD31AFC694D007A92F3 /* AppDelegate.swift */,
 				8CFC7DD51AFC694D007A92F3 /* ViewController.swift */,
+				8C10B3EF1B098AEF00F0AFBF /* ApiKeys.swift */,
+				8C10B3ED1B098A9D00F0AFBF /* ApiKeys.plist */,
 				8C276C331AFF9C190003B860 /* CoreLocationController.swift */,
 				8CFC7DF41AFCF479007A92F3 /* Current.swift */,
 				8CFC7DD71AFC694D007A92F3 /* Main.storyboard */,
@@ -204,6 +210,7 @@
 			files = (
 				8CFC7DD91AFC694D007A92F3 /* Main.storyboard in Resources */,
 				8CFC7DDE1AFC694D007A92F3 /* LaunchScreen.xib in Resources */,
+				8C10B3EE1B098A9D00F0AFBF /* ApiKeys.plist in Resources */,
 				8CFC7DDB1AFC694D007A92F3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +233,7 @@
 				8C276C341AFF9C190003B860 /* CoreLocationController.swift in Sources */,
 				8CFC7DD61AFC694D007A92F3 /* ViewController.swift in Sources */,
 				8CFC7DD41AFC694D007A92F3 /* AppDelegate.swift in Sources */,
+				8C10B3F01B098AEF00F0AFBF /* ApiKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

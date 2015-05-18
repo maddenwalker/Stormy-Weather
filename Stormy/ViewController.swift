@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let apiKey = "b32d6dee41db571d8e7e2623a33c8fb0"
+    let apiKey = valueForKey("FORECAST_API_KEY")
     
     var coreLocationController:CoreLocationController?
     
