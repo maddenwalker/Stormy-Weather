@@ -63,9 +63,5 @@ class CoreLocationController: NSObject, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println("location could not be retrieved with \(error)")
     }
-    
-    func returnLocation() -> String {
-        return locationString!
-    }
 
 }

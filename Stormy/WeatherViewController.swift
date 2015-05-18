@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class WeatherViewController: UIViewController {
+
     let apiKey: String = valueForAPIKey(keyname: "FORECAST_API_KEY")
-    
-    var coreLocationController:CoreLocationController?
+    var locationString: String?
     
     @IBOutlet var iconView: UIImageView!
     @IBOutlet var currentTimeLabel: UILabel!
@@ -26,8 +25,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.coreLocationController = CoreLocationController()
         refreshActivityIndicator.hidden = true
+        
+        getCurrentWeatherData()
     }
     
     
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
     func getCurrentWeatherData() {
         
-        let automaticCoordinates = getCoordinatesForURLCall()
+        let automaticCoordinates = getCoordinatesForURLCall(location: locationString!)
         
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
 
@@ -97,13 +97,12 @@ class ViewController: UIViewController {
         self.refreshButton.hidden = false
     }
     
-    func getCoordinatesForURLCall() -> String {
-        let currentLocation = coreLocationController?.returnLocation()
-        let currentLocationFormatted = parseCoordinatesForURL(currentLocation!)
+    func getCoordinatesForURLCall(#location: String) -> String {
+        let currentLocationFormatted = parseCoordinatesForURL(coordinates: location)
         return currentLocationFormatted
     }
     
-    func parseCoordinatesForURL(coordinates: String) -> String {
+    func parseCoordinatesForURL(#coordinates: String) -> String {
         var coordinateArray = coordinates.componentsSeparatedByString(" ")
         var coordinatesWithoutSpaces = coordinateArray[0] + coordinateArray[1]
         return coordinatesWithoutSpaces
